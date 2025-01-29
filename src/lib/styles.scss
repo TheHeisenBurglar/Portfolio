@@ -1,0 +1,18 @@
+$main: #252525;
+$secondary: #B96E3C;
+$secondText: #d1d1d1;
+$text: #ffffff;
+$common: #23e661;
+$rare: #b23eff;
+$legendary: #FF00CC;
+
+@mixin a-link($txtColor, $borderColor, $hoverText) {
+    color: $txtColor;
+    border-bottom: 0.3rem solid transparent;
+    text-decoration: none;
+    &:hover{
+        border-bottom: 0.3rem solid $borderColor;
+        color: $hoverText;
+        cursor: pointer;
+    }
+}
