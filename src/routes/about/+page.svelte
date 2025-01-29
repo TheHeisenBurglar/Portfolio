@@ -24,7 +24,7 @@
         <li>MongoDB</li>
     </ul>
     <h2>Reach out!</h2>
-    <a href="/assignment/a3"><p>Contact Page</p></a>
+    <a href="/contact"><p>Contact Page</p></a>
     <a href="https://www.linkedin.com/in/ibrahim-khalil-shehadeh/">Linked In Profile</a>
 </div>
 <style lang="scss">
