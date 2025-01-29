@@ -5,7 +5,16 @@
 
 <style lang="scss">
     @import '$lib/styles.scss';
-    
+    // @media only screen and ( max-width: 800px) {
+    //     a {
+    //         font-size: 2.5vh
+    //     }
+    // }
+    // @media only screen and (min-width: 800px) {
+    //     a {
+    //         font-size: 2.5vh
+    //     }
+    // }
     footer {
         background-color: $main;
         // padding: 1.5rem;
@@ -18,8 +27,8 @@
         height: 4rem;
         width: 100%;
         max-width: inherit;
-        font-size: xx-large;
         display: flex;
+        font-size: 2.5vh;
         justify-content: space-evenly;
         align-items: center;
         border-top: 0.3rem solid $secondary;
