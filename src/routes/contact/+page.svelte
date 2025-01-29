@@ -82,11 +82,10 @@
       </div>
 {:else if !successfulSubmission}
     {#if name == ""}
-        <h1>Hello!</h1>
+        <h1>Hello! Send Me An Email!</h1>
     {:else if name !== ""}
-        <h1>Hello {name}!</h1>
+        <h1>Hello {name}! Send Me An Email!</h1>
     {/if}
-        <h1> Send Me An Email! </h1>
         <form class="contact-form">
             <label for="name">Full Name</label>
             <input type="text" placeholder="John Doe" name="name" bind:value={name} class={submitted & (name == "") ? 'fault' : ''}/>
@@ -108,13 +107,15 @@
     @import '$lib/styles.scss';
     h1 {
         margin: auto;
+        text-align: center;
         width: fit-content;
         color: $text;
         padding: 1rem;
     }
     .contact-form {
         // background-color: red;
-        width: 50rem;
+        width: 90%;
+        max-width: 50rem;
         height: fit-content;
         margin: auto;
         border: 0.6rem solid $secondary;
@@ -124,7 +125,8 @@
         padding-bottom: 2rem;
     }
     input {
-        width: 40%;
+        width: 80%;
+        max-width: 30rem;
         font-size: large;
         margin: auto;
         border-bottom: 0.3rem solid transparent;
@@ -142,14 +144,16 @@
         font-size: large;
         // text-align: end;
         align-self: baseline;
-        width: 50%;
+        width: 80%;
+        max-width: 30rem;
         margin: auto;
     }
     button {
         background-color: $secondary;
         color: $text;
         font-size: xx-large;
-        width: 50%;
+        width: 80%;
+        max-width: 30rem;
         margin: auto;
         margin-top: 1rem;
         border: 0.3rem solid transparent;

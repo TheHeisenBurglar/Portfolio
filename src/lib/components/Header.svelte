@@ -1,62 +1,25 @@
 <script>
-    import { page } from '$app/stores'
-    import { afterUpdate } from 'svelte';
-    // export let data;
-    export let home = false;
-    export let writeup = false;
-    export let about = false
-    export let assignment = false;
-    afterUpdate(()=> {
-        let currentPath = $page.url.pathname.split("/")[1]
-        switch (currentPath) {
-            case "writeup":
-                home = false;
-                writeup = true;
-                about = false;
-                assignment = false;
-                break;
-            case "about":
-                home = false;
-                writeup = false;
-                about = true;
-                assignment = false;
-                break;
-            case "assignment":
-                home = false;
-                writeup = false;
-                about = false;
-                assignment = true;
-                break;
-            default:
-                home = true;
-                writeup = false;
-                about = false;
-                assignment = false;
-                break;
-        }
-    })
-    
+    import { page } from '$app/stores';
+    $: currentPath = $page.url.pathname;
 </script>
 <nav>
-    <a href="/ " class="{home ? "active" : ""}">Home</a>
+    <a href="/ " class="{currentPath === "/" ? "active" : ""}">Work</a>
+    <a href="/about" class="{currentPath === "/about" ? "active" : ""}">About</a>
     <div class="dropdown">
-        <span class="{writeup ? "active" : ""}">Write Ups</span>
+        <span class="{currentPath.includes("/notes") ? "active" : ""}">Notes</span>
         <div class="dropdown-content">
-            <a href="/writeup/lab1">Lab 1</a>
-            <a href="/writeup/lab2">Lab 2</a>
-            <a href="/writeup/lab3">Lab 3</a>
+            <ul>
+                <li><a href="/notes/experience-with-ssgs">Experience with SSGS</a></li>
+                <li><a href="/notes/headless-cms">Headless CMS</a></li>
+                <li><a href="/notes/serverless-functions">Servless Functions</a></li>
+            </ul>
+            <!-- <a href="/notes/experience-with-ssgs">Experience with SSGS</a>
+            <a href="/notes/headless-cms">Headless CMS</a>
+            <a href="/notes/serverless-functions">Servless Functions</a> -->
         </div>
     </div>
-    <div class="dropdown">
-        <span class="{assignment ? "active" : ""}">Assignments</span>
-        <div class="dropdown-content">
-            <a href="/assignment/a1">Assignment1</a>
-            <a href="/assignment/a2">Assignment2</a>
-            <a href="/assignment/a3">Assignment3</a>
-        </div>
-    </div>
+    <a href="/contact" class="{currentPath === "/contact" ? "active" : ""}">Contact</a>
     
-    <a href="/about" class="{about ? "active" : ""}">About</a>
 </nav>
 <style lang="scss">
     @import '$lib/styles.scss';
@@ -68,6 +31,8 @@
         margin: 0;
         display: flex;
         justify-content: space-evenly;
+        z-index: 3;
+        position: relative;
     }
     .active{
         border-bottom: 0.3rem solid $secondary;
@@ -78,19 +43,22 @@
         display: inline-block;
         &:hover {
             .dropdown-content{
-                display: block;
+                opacity: 100;
+                pointer-events: all;
             }
         }
     }
     .dropdown-content {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
         position: absolute;
         /* min-width: inherit; */
         width: fit-content;
         flex-wrap:wrap-reverse;
         z-index: 1;
         background-color: $main;
-        padding: 1rem;
+        // padding: 1rem;
+        padding-right: 20px;
     }
     // .dropdown:hover .dropdown-content {
     //     display: block;
