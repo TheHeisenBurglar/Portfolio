@@ -114,7 +114,7 @@ Front matter is a word originating from its use in books. The book's front matte
 #### In the context of the web
 It comes before the content portion of markdown, written in a very similar fashion to JSON, and allows the writer to provide necessary information in the context of this file.
 
-> Source: https://dpericich.medium.com/what-is-front-matter-and-how-is-it-used-to-create-dynamic-webpages-9d8dc053b457
+Source: https://dpericich.medium.com/what-is-front-matter-and-how-is-it-used-to-create-dynamic-webpages-9d8dc053b457
 
 <style lang="scss"> 
     @import '$lib/styles.scss';

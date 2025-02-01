@@ -1,9 +1,13 @@
-# Lab 2 - Headless CMS
+# ***Headless CMS***
+---
 ### My Choice
-For my assignment, I'm choosing Ghost as my headless CMS because it is easier to work with compared to some alternatives I’ve tried, like Strapi. Its Markdown editor and user-friendly API make content creation and integration a straightforward process, especially when using SvelteKit, which I found surprisingly easy to work with. While Ghost is primarily designed for blogs, this specialization actually simplifies my work, as it comes with native support for tagging and content categorization, both of which are ideal for organizing blog posts. The learning curve is manageable, and I don’t have to navigate SQL database issues like I did with Strapi, allowing me to focus on improving styling and functionality rather than troubleshooting database management. Overall, Ghost meets my needs well.
+---
+For an assignment, I chose Ghost as the headless CMS because it is easier to work with compared to some alternatives I’ve tried, like Strapi. Its Markdown editor and user-friendly API make content creation and integration a straightforward process, especially when using SvelteKit, which I found surprisingly easy to work with. While Ghost is primarily designed for blogs, this specialization actually simplifies my work, as it comes with native support for tagging and content categorization, both of which are ideal for organizing blog posts. The learning curve is manageable, and I don’t have to navigate SQL database issues like I did with Strapi, allowing me to focus on improving styling and functionality rather than troubleshooting database management. Overall, Ghost meets the projects needs well.
 
-## Research
-### Define Headless CMS
+---
+### Research
+---
+#### What is Headless CMS?
 A Content Management System (CMS) is a backend repository for managing data. A headless CMS does not include a built-in front end, making the data accessible through an API.
 
 #### Pros
@@ -77,15 +81,19 @@ Founded in 2016 by Even Westvang, Magnus Kongsli Hilestad, Obyind Rostad and Sim
 - Team plan: **$99**/month
 - Business plan: **$949**/month
 - Enterprise plan: (Custom pricing)
-#### Experience
+
+---
+### Experience
+---
 After using Ghost, I assumed implementing another CMS would be as simple as calling a different endpoint of an API. However, I quickly discovered while working with Strapi that its default database solution was a form of SQL—specifically SQLite, I believe. This posed a challenge for me, as I had only used SQL briefly in a database course about a year ago; my main experience was with REST APIs and MongoDB-style databases. Retrieving data was one hurdle, but getting it to render on my front end was a whole other challenge. The data was deeply nested, which made it a real programming effort to extract into readable text. Overall, this CMS was a headache. My research led me to believe it would be easier for developers, but I guess many developers have more experience with SQL. Honestly, working with this CMS has motivated me to learn more about SQL and recognize the necessity of understanding it as a database solution.
-#### Strapi Api
+### Strapi Api
+# Dashboard
 ![image](/sanity/sanityapi.png)
-#### Get All
+# Get All
 ![image](/sanity/getall1.png)
 ![image](/sanity/getall2.png)
 ![image](/sanity/getall3.png)
-#### Get by Id / Slug
+# Get by Id / Slug
 ![image](/sanity/getbyid1.png)
 ![image](/sanity/getbyid2.png)
 ![image](/sanity/getbyid3.png)
@@ -133,49 +141,53 @@ Created in 2013 by John O'Nolan and Hannah Wolfe, Ghost is a blog centered headl
 - Business plan: **$199**/month
 #### Experience
 At first, using a CMS API in SvelteKit felt daunting, but after learning more about it, implementing my ideas became straightforward. I would have liked to spend more time enhancing the styling and functionality of Ghost to create a complete site and to clean up my codebase. As a first-time user of a headless CMS, I found Ghost to be a solid choice. However, I noticed that the API response didn’t include information about the blog post's author, which I hadn't initially looked into but would have been useful. Overall, this headless CMS was easy to integrate and made creating blog posts simple.
-#### Ghost API
+# Ghost Dashboard
 ![image](/ghost/ghostapi.png)
 
-#### Get all
+# Get all
 ![image](/ghost/getall1.png)
 ![image](/ghost/getall2.png)
 ![image](/ghost/getall3.png)
 
-#### Get by slug
+# Get by slug
 ![image](/ghost/getbyslug1.png)
 ![image](/ghost/getbyslug2.png)
 ![image](/ghost/getbyslug3.png)
-## Sources:
-- https://dev.to/builderio/the-ultimate-guide-to-headless-cms-4o6h
-- https://buttercms.com/blog/best-headless-cms/
-- https://docs.strapi.io/dev-docs/quick-start
-- https://ghost.org/resources/
+
+---
+Source: https://dev.to/builderio/the-ultimate-guide-to-headless-cms-4o6h
+
+Source: https://buttercms.com/blog/best-headless-cms/
+
+Source: https://docs.strapi.io/dev-docs/quick-start
+
+Source: https://ghost.org/resources/
 
 <style lang="scss"> 
     @import '$lib/styles.scss';
     * {
         color: $text;
-        width: 70%;
+        width: 90%;
         margin: auto;
     }
     ul, li {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
     h1 {
         text-align: center;
-        font-size: 4rem;
+        font-size: xx-large;
     }
     h3 {
         color: $secondary;
-        font-size: 3rem;
+        font-size: xx-large;
     }
     h4 {
         color: $secondary;
-        font-size: 1.5rem;
+        font-size: larger;
     }
     li, p {
-        font-size: 1.2rem;
+        font-size: large;
     }
     li {
         color: $secondText;

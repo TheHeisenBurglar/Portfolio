@@ -1,16 +1,11 @@
-# Lab 3 - Serverless Functions
+# ***Serverless Functions***
 <br/>
 
 ---
-## UPDATE FROM AFTER COMPLETING ASSIGNMENT 3:
+### Quick Overview Serverless function providers:
 ---
-Assignment 3 taught me that sveltekit is new, and broken when it comes to implement not standard things. Geting static site generation to work on already existing very dynamic site was tough. Now that it does, calling api's is a nightmare, adapters for netlifty don't work as they should and having serverless functions was gonna take longer than I had the patience for. So, for assignment 3 I choose netlify to host my static files, and emailJS as my 'serverless' function.
-<br/>
+### Netlify Functions:
 
-### Comparison of Serverless function providers:
----
-## Netlify Functions:
----
 Free Tier: 
 - 125,000 requests per month.
 - 100 hours of compute time.
@@ -30,9 +25,9 @@ Cons:
 - Limited resources
 - Limited scaling & configurations compared to competitors.
 
----
-## AWS Lambda:
----
+
+### AWS Lambda:
+
 Free Tier: 
 - 1 million requests per month.
 - 400,000 GB-seconds of compute time.
@@ -55,9 +50,9 @@ Cons:
 - Complex setup.
 - Cold start latency.
 
----
-## Google Cloud Functions:
----
+
+### Google Cloud Functions:
+
 Free Tier: 
 - 2 million invocations per month.
 - 5 GB of outbound data transfer.
@@ -79,9 +74,9 @@ Cons:
 - Complex Pricing 
 - Setup is tricky for beginners.
   
----
-## Microsoft Azure Functions:
----
+
+### Microsoft Azure Functions:
+
 Free Tier: 
 - 1 million requests per month.
 - 400,000 GB-seconds of compute time.
@@ -99,12 +94,12 @@ Cons:
 - More complex to use compared to competitors.
 - Especially for non-Microsoft ecosystems.
   
-<br/>
 
-### As for email services:
 ---
-## EmailJS:
+### Email services:
 ---
+### EmailJS:
+
 Free Tier: 
 - 200 emails per month.
 
@@ -120,9 +115,9 @@ Cons:
 - Limited free tier.
 - May not scale well for high-volume applications.
 
----
-## SendGrid:
----
+
+### SendGrid:
+
 Free Tier: 
 - 100 emails per day.
 
@@ -138,9 +133,9 @@ Cons:
 - Free tier is limited.
 - Requires more configuration for full email workflows.
 
----
-## Mailgun:
----
+
+### Mailgun:
+
 Free Tier: 
 - 5,000 emails for the first 3 months.
 
@@ -155,9 +150,9 @@ Cons:
 - Free tier limited to the first 3 months.
 - Paid plans can get expensive for high-volume sending.
 
----
-## MailChimp:
----
+
+### MailChimp:
+
 Free Tier: 
 - 500 subscribers and 3,500 emails per month.
   
@@ -179,27 +174,27 @@ Cons:
     @import '$lib/styles.scss';
     * {
         color: $text;
-        width: 70%;
+        width: 90%;
         margin: auto;
     }
     ul, li {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
     h1 {
         text-align: center;
-        font-size: 4rem;
+        font-size: xx-large;
     }
     h3 {
         color: $secondary;
-        font-size: 3rem;
+        font-size: xx-large;
     }
     h4 {
         color: $secondary;
-        font-size: 1.5rem;
+        font-size: larger;
     }
     li, p {
-        font-size: 1.2rem;
+        font-size: large;
     }
     li {
         color: $secondText;
