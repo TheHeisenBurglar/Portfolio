@@ -1,6 +1,10 @@
+<script>
+    import resume from '$lib/assets/IbrahimShehadeh.pdf';
+</script>
 <footer>
     <!-- <a href="/terms">terms and conditions</a> -->
     <a href="https://www.linkedin.com/in/ibrahim-khalil-shehadeh/">LinkedIN</a>
+    <a href={resume} download>Download Resume</a>
 </footer>
 
 <style lang="scss">
