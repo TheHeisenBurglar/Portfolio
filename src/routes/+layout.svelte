@@ -2,6 +2,10 @@
     import Footer from '$lib/components/Footer.svelte';
     import Header from '$lib/components/Header.svelte';   
     import bgVideo from '$lib/assets/background.mp4'
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
+    import { dev } from '$app/environment';
+
+    injectAnalytics({ mode: dev ? 'development' : 'production'})
 </script>
 <Header />
 <div class="slot-div">
