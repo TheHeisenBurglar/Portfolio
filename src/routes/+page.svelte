@@ -18,7 +18,7 @@
     </div>
 </div>
 <div class="demo-card">
-    <h3 class="demo-h3"><a href="https://pixel-heart.vercel.app">PixelHeart - In Progress</a></h3>
+    <h3 class="demo-h3"><a href="https://pixel-heart.vercel.app/chat/elaine">PixelHeart - In Progress</a></h3>
     <img src={PixelHeart_Screenshot} class="demo-img"/>
 </div>
 
